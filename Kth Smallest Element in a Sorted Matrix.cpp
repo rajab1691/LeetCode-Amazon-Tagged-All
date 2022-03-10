@@ -29,12 +29,6 @@ int kthSmallest(vector<vector<int>>&a, int k) {
   priority_queue<vector<int>,vector<vector<int>>,greater<>>pq;
 
   for (int i = 0; i < min(n, k); i++) {
-   int kthSmallest(vector < vector < int >> & a, int k) {
-
-  int n = a.size();
-  priority_queue<vector<int>,vector<vector<int>>,greater<>>pq;
-
-  for (int i = 0; i < min(n, k); i++) {
     pq.push({a[i][0],i,0});
   }
   int ans;
