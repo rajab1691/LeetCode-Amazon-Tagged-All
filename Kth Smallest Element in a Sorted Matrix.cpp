@@ -7,8 +7,8 @@
 /*
   Brutest Idea: push all element into vector, sort that and return v[k-1]th element.
   
-  1. Using max-heap
-    a.Push all elements into max heap and then pop (k-1) element.
+  1. Using min-heap
+    a.Push all elements into min heap and then pop (k-1) element.
     b.return top element now.
     T.C-O(n*m*log(m*n))
     S.C-O(n*m)
