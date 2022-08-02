@@ -44,20 +44,6 @@ int kthSmallest(vector<vector<int>>&a, int k) {
   }
   return ans;
 }
-  }
-  int ans;
-  for (int i = 1; i <= k; i++) {
-    auto top = pq.top();
-    pq.pop();
-    ans = top[0];
-    int r = top[1];
-    int c = top[2];
-
-    if (c + 1 < n)
-      pq.push({a[r][c+1],r,c+1});
-  }
-  return ans;
-}
 
 /*
   3. Binary Search
